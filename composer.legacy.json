@@ -1,0 +1,38 @@
+{
+    "name": "retaint/magento2-analytics",
+    "description": "Retaint Analytics — secure ecommerce data feeds for actionable insights into orders, products, customers and more. (Legacy channel: Magento 2.3+ / PHP 7.1+.)",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Retaint",
+            "email": "support@retaint.com",
+            "homepage": "https://retaint.com"
+        }
+    ],
+    "require": {
+        "php": "~7.1.0||~7.2.0||~7.3.0||~7.4.0||~8.1.0||~8.2.0||~8.3.0||~8.4.0",
+        "magento/framework": ">=102.0.0",
+        "magento/module-store": "*",
+        "magento/module-backend": "*",
+        "magento/module-config": "*",
+        "magento/module-eav": "*",
+        "magento/module-sales": "*",
+        "magento/module-catalog": "*",
+        "magento/module-catalog-inventory": "*",
+        "magento/module-configurable-product": "*",
+        "magento/module-customer": "*",
+        "magento/module-directory": "*",
+        "magento/module-newsletter": "*",
+        "magento/module-product-alert": "*",
+        "magento/module-reports": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Retaint\\Analytics\\": ""
+        }
+    }
+}

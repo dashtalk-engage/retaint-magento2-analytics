@@ -18,6 +18,11 @@ schedule.
 The module installs on whichever PHP version your Magento release supports — PHP 8.1 (2.4.4+)
 through PHP 8.4 (recommended for 2.4.8).
 
+**Older stores (Magento 2.3.x / PHP 7.1+):** the code runs unchanged on 2.3+, but the
+Marketplace package declares PHP 8.1+. Legacy clients install via `install.sh` (which
+ignores `composer.json`) or the wider `composer.legacy.json` manifest. See
+[LEGACY.md](LEGACY.md).
+
 ## Installation
 
 ### Quick install (recommended)
