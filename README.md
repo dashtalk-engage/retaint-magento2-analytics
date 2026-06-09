@@ -12,8 +12,11 @@ schedule.
 
 ## Requirements
 
-- Magento Open Source / Adobe Commerce 2.4.x
-- PHP 8.1, 8.2, or 8.3
+- Magento Open Source / Adobe Commerce **2.4.4 – 2.4.8** (every currently-supported release)
+- PHP **8.1, 8.2, 8.3, or 8.4**
+
+The module installs on whichever PHP version your Magento release supports — PHP 8.1 (2.4.4+)
+through PHP 8.4 (recommended for 2.4.8).
 
 ## Installation
 
