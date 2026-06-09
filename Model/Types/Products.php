@@ -35,7 +35,7 @@ class Products {
         $this->attributeCollectionFactory = $attributeCollectionFactory;
         $this->resource = $resource;
     }
-    public function load($pageSize, $pageNum, $startDate = null, $endDate = null, $sortDir, $filterBy, $id)
+    public function load($pageSize, $pageNum, $startDate, $endDate, $sortDir, $filterBy, $id)
     {
         $config = $this->helper->getConfig();
         $this->pageNum = $pageNum;
