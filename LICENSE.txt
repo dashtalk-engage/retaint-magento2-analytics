@@ -1,0 +1,10 @@
+Retaint Analytics for Magento 2
+Copyright (c) 2026 Retaint (https://retaint.com)
+
+Licensed under the Open Software License version 3.0 (OSL-3.0).
+
+A copy of the full license text is available at:
+https://opensource.org/licenses/OSL-3.0
+
+NOTE: Before submitting to the Adobe Commerce Marketplace, replace this notice
+with the complete verbatim text of the Open Software License 3.0.

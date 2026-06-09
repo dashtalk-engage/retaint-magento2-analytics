@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Retaint Analytics for Magento 2.
+ *
+ * @copyright Copyright (c) 2026 Retaint (https://retaint.com)
+ * @license   https://opensource.org/licenses/OSL-3.0  Open Software License 3.0 (OSL-3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="retaint" frontName="retaint">
+            <module name="Retaint_Analytics"/>
+        </route>
+    </router>
+</config>

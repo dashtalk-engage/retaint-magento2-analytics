@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Retaint Analytics for Magento 2.
+ *
+ * @copyright Copyright (c) 2026 Retaint (https://retaint.com)
+ * @license   https://opensource.org/licenses/OSL-3.0  Open Software License 3.0 (OSL-3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="retaint" translate="label" sortOrder="99999">
+            <label>Retaint</label>
+        </tab>
+        <section id="retaint_settings" translate="label" type="text" sortOrder="1000"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Analytics</label>
+            <tab>retaint</tab>
+            <resource>Retaint_Analytics::config</resource>
+            <group id="info" translate="label" type="text" sortOrder="1"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <frontend_model>Retaint\Analytics\Block\Adminhtml\Info</frontend_model>
+            </group>
+            <group id="general" translate="label" type="text" sortOrder="100"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Retaint Settings</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Retaint</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>retaint_settings/general/enabled</config_path>
+                    <comment>Enable the secure data feeds polled by Retaint.</comment>
+                </field>
+                <field id="connect" translate="label" type="button" sortOrder="20"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Connection</label>
+                    <frontend_model>Retaint\Analytics\Block\Adminhtml\Connect</frontend_model>
+                </field>
+                <field id="siteurl" translate="label comment" type="label" sortOrder="30"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Your Secure Store URL</label>
+                    <frontend_model>Retaint\Analytics\Block\Adminhtml\StoreUrl</frontend_model>
+                    <comment>The base URL Retaint polls for data.</comment>
+                </field>
+                <field id="secret" translate="label comment" type="label" sortOrder="40"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Your Secret Key</label>
+                    <frontend_model>Retaint\Analytics\Block\Adminhtml\SecretKey</frontend_model>
+                    <comment>Retaint must send this value in the X-Retaint-Token request header.</comment>
+                </field>
+                <field id="collector_url" translate="label comment" type="text" sortOrder="50"
+                       showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Retaint Collector URL</label>
+                    <config_path>retaint_settings/general/collector_url</config_path>
+                    <comment>Endpoint used by the one-click Connect handshake. Defaults to https://datapulse.retaint.com.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
